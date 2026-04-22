@@ -1,10 +1,7 @@
 import pygame
-import sys
 
 pygame.init()
-
-screen = pygame.display.set_mode((400, 500))
-
+screen = pygame.display.set_mode((400, 300))
 done = False
 
 while not done:
@@ -12,7 +9,5 @@ while not done:
         if event.type == pygame.QUIT:
             done = True
 
+    pygame.draw.rect(screen, (160, 20, 0), pygame.Rect(200, 100, 100, 60))
     pygame.display.flip()
-
-pygame.quit()
-sys.exit()
