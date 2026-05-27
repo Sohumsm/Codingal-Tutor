@@ -19,12 +19,12 @@ for i in range(4):
         frame = Frame(
             master=root,
             relief=SUNKEN,
-        borderwidth=1
-    )
+            borderwidth=1
+        )
 
-    frame.grid(row=i, column=j)
-    label = Label(master=frame, text=nums[i][j], bg='#d0efff')
-    label.pack(padx=8, pady=8)
+        frame.grid(row=i, column=j)
+        label = Label(master=frame, text=nums[i][j], bg='#d0efff')
+        label.pack(padx=8, pady=8)
 
 
 root.mainloop()
